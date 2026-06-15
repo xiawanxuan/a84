@@ -1,0 +1,14 @@
+addr: "localhost:6379"
+password: ""
+db: 0
+pool_size: 10
+min_idle_conns: 5
+dial_timeout: "5s"
+read_timeout: "3s"
+write_timeout: "3s"
+pool_timeout: "4s"
+idle_timeout: "5m"
+idle_check_frequency: "1m"
+max_retries: 3
+min_retry_backoff: "8ms"
+max_retry_backoff: "512ms"

@@ -1,0 +1,37 @@
+server:
+  port: "8080"
+  mode: "debug"
+  read_timeout: 30
+  write_timeout: 30
+
+postgres:
+  host: "localhost"
+  port: "5432"
+  user: "postgres"
+  password: "your_password_here"
+  dbname: "pointcloud_annotation"
+  sslmode: "disable"
+  timezone: "Asia/Shanghai"
+
+redis:
+  host: "localhost"
+  port: "6379"
+  password: ""
+  db: 0
+  pool_size: 10
+
+logger:
+  level: "info"
+  filename: "logs/app.log"
+  max_size: 100
+  max_backups: 10
+  max_age: 30
+  compress: true
+  development: true
+
+jwt:
+  secret: "your_jwt_secret_key_here_please_change_in_production"
+  expire_hour: 72
+
+version:
+  max_snapshots: 30
